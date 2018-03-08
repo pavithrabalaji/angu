@@ -1,0 +1,28 @@
+<div class="container">
+  <h2>Welcome To {{title}}</h2>
+  <ul class="nav nav-tabs">
+    <li class="nav-item" 
+    routerLinkActive="active"
+    [routerLinkActiveOptions]="{exact: true}"
+    >
+      <a class="nav-link"  routerLink="/" >Home</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link"  [routerLink]="['/users']" >User</a>
+    </li>
+    <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link"  [routerLink]="['/projects']">Product</a>
+    </li>
+  </ul>
+</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-lg-12 col-xs-12" >
+   <router-outlet></router-outlet>
+   <app-cockpit></app-cockpit>
+   <!--<app-serverelement *ngFor="let serverElement of serverElements"></app-serverelement>-->
+   <app-serverelement></app-serverelement>
+    </div>
+  </div>
+</div>
+

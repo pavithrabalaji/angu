@@ -1,0 +1,14 @@
+ <div class="row">
+    <div class="col-sm-12 col-lg-12 col-xs-12" >
+  <div class="form-group">
+      <label for="email">Name:</label>
+      <input type="text" class="form-control" id="email" placeholder="Enter email" name="name" [(ngModel)]="name">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Port:</label>
+      <input type="text" class="form-control" id="pwd" placeholder="Enter password" name="content" [(ngModel)]="content">
+    </div>
+     <button type="submit" class="btn btn-primary" (click)="Addserver()">Add server</button>
+     <button type="submit" class="btn btn-primary" (click)="Printserver()">Print server</button>
+    </div>
+  </div>
